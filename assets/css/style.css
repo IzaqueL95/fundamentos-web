@@ -1,0 +1,128 @@
+/*estilos da página index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');
+
+/*reseta o padrão de fonte do navegador e coloca a estabelecida por mim*/
+*{
+    
+    font-family: "Poppins", sans-serif;
+}
+
+/*define a cor do fundo da body, ou seja de toda a pagina*/
+body {
+    background:#00b894;
+}
+.center {
+    text-align: center;
+}
+
+/*define a cor dos nomes dos formularios, nome, E-mail, Assunto*/
+.form-title-text-style{
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: #000000;
+    
+}
+
+.menu-style {
+    
+    background: #00352a6c;
+    width: 1340px;
+    height: 30px;
+    
+}
+.form-box-style {
+    background: #55efc4; /*cor do fundo da caixinha de digitação*/
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem; /* ao digitar o texto não fica grudado com a borda da caixinha*/
+    margin-top: 0.5rem;
+    outline: none;
+    color: rgb(34, 10, 10); 
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px; /*para arredondar as bordas dos formulários*/
+}
+.form-msg-style {
+    background: #55efc4; 
+    width: 300px;
+    height: 120px;
+    padding: 0 0.5rem; 
+    margin-top: 0.5rem;
+    outline: none;
+    color: rgba(34, 34, 34); 
+    font-size: 1rem;
+    border: 1px solid #040B18;
+    border-radius: 8px; 
+}
+
+.botao-style {
+    background: #0984e3; 
+    width: 300px;
+    height: 50px;
+    padding: 0 0.5rem; 
+    margin-top: 0.5rem;
+    outline: none;
+    color: rgb(37, 6, 6); 
+    font-size: 1rem;
+    border: 1px solid #000000;
+    border-radius: 10px; 
+    transition: all .3s ease-in-out;
+}
+.botao-style:hover{
+    background: #6755f1;
+    
+}
+.container {
+    display: flex;
+    flex-flow: row;  /*caso use o row wrap ele ira quebrar uma linha para baixo e não alinhara os itens de lado*/
+    justify-content: center;
+    align-items: center; /*alinha os itens no centro*/
+}
+
+#menu li {
+display: inline;
+padding: 15px;
+}
+
+#menu li a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+#menu li a:hover {
+    color: grey;
+}
+
+.p-30 {
+    padding: 30px;
+
+}
+
+.br-50 {
+    border-radius: 60%;
+    
+}
+
+.wid {
+    width: 500px;
+}
+
+.tm-social-icon {
+    width: 40px;
+    height: 40px;
+    padding: 10px;
+}
+
+.mb-50 {
+    margin-bottom: 50px;
+}
+
+.justify {
+    text-align: justify;
+}
+
+/*estilos da página contato.html*/
+.ml-50 {
+ margin-left: 50px;   
+}
