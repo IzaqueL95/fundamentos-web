@@ -3,7 +3,10 @@
 
 /*reseta o padrão de fonte do navegador e coloca a estabelecida por mim*/
 *{
+    margin: 0;
+    padding: 0;
     
+    box-sizing: border-box;
     font-family: "Poppins", sans-serif;
 }
 
@@ -24,11 +27,8 @@ body {
 }
 
 .menu-style {
-    
     background: #00352a6c;
-    width: 1340px;
     height: 30px;
-    
 }
 .form-box-style {
     background: #55efc4; /*cor do fundo da caixinha de digitação*/
