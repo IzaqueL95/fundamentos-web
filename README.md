@@ -1,5 +1,8 @@
 # fundamentos-web
+<<<<<<< HEAD
+=======
 
+>>>>>>> main
 Um modelo de página web, feito em HTML E CSS
 
 <img src="https://github.com/IzaqueL95/fundamentos-web/blob/css/assets/img/capturar-final.png">

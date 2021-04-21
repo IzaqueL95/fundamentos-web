@@ -26,16 +26,18 @@
         <div class="form-title-text-style">
             <form action="">  
                 <label for="nome">Nome:</label> <br>
-                <input class="form-box-style" type="text" id="nome"> <!--For se referencia ao id passado em input, então tem que ser igual-->
+                <input class="form-box-style" type="text" id="nome" onkeyup='validaNome()'> <!--For se referencia ao id passado em input, então tem que ser igual-->
+                <div id='txtNome'></div>
                 <p>
                 <label for="email">E-mail:</label> <br>
-                <input class="form-box-style" type="email" id="email">
+                <input class="form-box-style-email" type="email" id="email" onkeyup='validaEmail()'>
+                <div id='txtEmail'></div>
                 <p>
                 <label  for="assunto">Assunto:</label> <br>
-                <textarea class="form-msg-style" name="assunto" id="assunto" cols="60" rows="10"></textarea>
-                <br>
-                <br>
-                <button class="botao-style">Enviar</button>
+                <textarea class="form-msg-style" name="assunto" id="assunto" cols="60" rows="10" onkeyup="validaAssunto()"></textarea>
+                <div id='txtAssunto'></div>
+                
+                <button onclick="enviar()" class="botao-style">Enviar</button>
             </form>
         </div>
 
@@ -44,7 +46,7 @@
 
             <p>Chuo, Tóquio 104-0061 Japão</p>
 
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.195325404151!2d139.7567843266073!3d35.669643215289405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be701836fbb%3A0x604685b30ba99851!2zR2luemEsIENodW8sIFTDs3F1aW8gMTA0LTAwNjEsIEphcMOjbw!5e0!3m2!1spt-BR!2sbr!4v1618588578090!5m2!1spt-BR!2sbr" width="500" height="300" style="border:10;" allowfullscreen="" loading="lazy"></iframe>
+            <iframe  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12965.195325404151!2d139.7567843266073!3d35.669643215289405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188be701836fbb%3A0x604685b30ba99851!2zR2luemEsIENodW8sIFTDs3F1aW8gMTA0LTAwNjEsIEphcMOjbw!5e0!3m2!1spt-BR!2sbr!4v1618588578090!5m2!1spt-BR!2sbr" width="500" height="300" style="border:10;" allowfullscreen="" loading="lazy" onmousemove="mapaZoom()" onmouseout="mapaNormal()" id='mapa'></iframe>
         </div>
 
     </div>
@@ -70,7 +72,7 @@
             
         </footer>   
     
-
+        <script src="assets/js/script.js"></script>
     
 </body>
 </html>
