@@ -98,7 +98,7 @@ function enviar () {
     if(nomeOk == true && EmailOk == true && AssuntoOk == true){
         alert ('Formulário enviado com sucesso!')
     } else {
-        alert('Preencha o formulario corretamente antes de enviar')
+        alert('Preencha o formulario corretamente antes de enviar!')
     }
 
 }
